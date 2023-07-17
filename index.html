@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>claude.ai tools</title>
+    <meta name="description" content = "This website integrates some useful tools related to Claude AI.">
+    <style>
+        body {
+            background-color: #ece1c9; /* 浅灰色背景 */
+            position: relative; /* 相对定位，为绝对定位提供参考 */
+            min-height: 100vh; /* 设置body最小高度为视口高度，以保证页面内容占满整个视口 */
+        }
+        
+        h1 {
+            color: #16100b; /* 标题文字颜色为咖啡色 */
+            text-align: center; /* 居中对齐标题 */
+            padding: 20px; /* 添加一些内边距 */
+            margin: 30px 0; /* 移除标题的外边距，并在上下方向添加间距 */
+            background-color: transparent; /* 标题无底色 */
+            font-size: 300%; /* 标题字体放大50% */
+        }
+        
+        #time {
+            position: absolute; /* 绝对定位 */
+            left: 0; /* 左对齐 */
+            right: 0; /* 右对齐 */
+            bottom: 20px; /* 距离底部的距离 */
+            text-align: center; /* 居中对齐时间 */
+            font-size: 24px; /* 时间字体大小 */
+        }
+        #link-container {
+            text-align: center; /* 居中对齐链接 */
+        }
+        #link-container a {
+            display: block; /* 将链接以块级元素显示，每个链接占据一行 */
+        }
+    </style>
+    <script>
+        function displayTime() {
+            var now = new Date();
+            var timeElement = document.getElementById("time");
+            timeElement.textContent = "Current time: " + now.toLocaleTimeString();
+        }
+        
+        setInterval(displayTime, 1000); // 每秒刷新一次时间
+    </script>
+</head>
+<body>
+    <h1>claude tools</h1>
+    <div id="time"></div>
+    <div id="link-container">
+        <a href="https://poe.com/Claude-2-100k">Visit Claude AI</a>
+        <a href="https://greenplum.slack.com/apps/A04KGS7N9A8-claude?tab=more_info">Visit Claude AI on Slack</a>
+    </div>
+    <!-- 这里可以添加页面其他内容 -->
+</body>
+</html>
